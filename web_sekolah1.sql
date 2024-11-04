@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 18, 2024 at 04:38 PM
+-- Generation Time: Nov 04, 2024 at 05:49 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -42,7 +42,7 @@ CREATE TABLE `agendas` (
 
 INSERT INTO `agendas` (`id`, `title`, `description`, `event_date`, `created_at`, `updated_at`) VALUES
 (1, 'Kelas 12', 'flasmop', '2024-11-29 00:00:00', '2024-09-29 05:49:46', '2024-10-09 08:19:26'),
-(9, 'kelas 12', 'besok', '2024-09-24 00:00:00', '2024-09-29 18:08:09', '2024-09-29 18:08:33');
+(9, 'TransforKr4b', 'acara pameran', '2024-10-16 00:00:00', '2024-09-29 18:08:09', '2024-10-21 17:07:01');
 
 -- --------------------------------------------------------
 
@@ -63,8 +63,8 @@ CREATE TABLE `albums` (
 --
 
 INSERT INTO `albums` (`id`, `title`, `user_id`, `created_at`, `updated_at`) VALUES
-(3, 'Judul', 2, '2024-09-29 23:25:13', '2024-09-29 23:29:03'),
-(6, 'tes', 2, '2024-09-30 18:13:50', '2024-09-30 18:13:50');
+(3, 'Kegiatan Hari ini', 2, '2024-09-29 23:25:13', '2024-10-18 08:50:07'),
+(6, 'Kegiatan P5', 2, '2024-09-30 18:13:50', '2024-10-18 08:49:02');
 
 -- --------------------------------------------------------
 
@@ -89,7 +89,7 @@ INSERT INTO `comments` (`id`, `photo_id`, `user_id`, `content`, `created_at`, `u
 (12, 8, 13, 'wow', '2024-09-29 01:37:32', '2024-09-29 01:37:32'),
 (18, 10, 2, 'tes admin', '2024-09-30 19:24:53', '2024-09-30 19:24:53'),
 (23, 8, 2, 'tes komen admin', '2024-10-03 17:39:14', '2024-10-03 17:39:14'),
-(27, 9, 13, 'tes komen', '2024-10-12 22:08:56', '2024-10-12 22:08:56');
+(42, 43, 13, 'kece pak!!!', '2024-10-18 10:37:22', '2024-10-18 10:37:22');
 
 -- --------------------------------------------------------
 
@@ -126,9 +126,9 @@ CREATE TABLE `galleries` (
 --
 
 INSERT INTO `galleries` (`id`, `title`, `user_id`, `created_at`, `updated_at`) VALUES
-(1, 'PPLG', 2, '2024-09-28 02:00:35', '2024-10-01 08:43:26'),
+(1, 'Sekolah', 2, '2024-09-28 02:00:35', '2024-10-18 08:24:21'),
 (2, 'Event Sekolah', 2, '2024-09-28 02:01:00', '2024-09-28 02:02:02'),
-(7, 'Sekolah', 2, '2024-09-29 04:45:54', '2024-09-29 19:12:53');
+(7, 'Kejuruan', 2, '2024-09-29 04:45:54', '2024-10-18 08:38:01');
 
 -- --------------------------------------------------------
 
@@ -151,7 +151,8 @@ CREATE TABLE `infos` (
 INSERT INTO `infos` (`id`, `title`, `content`, `created_at`, `updated_at`) VALUES
 (1, 'Senin', 'Upacara Bendera', '2024-09-29 05:45:06', '2024-09-29 05:45:06'),
 (3, 'selasa-rabu', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac sodales velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus imperdiet a est non vestibulum. Phasellus ante erat, porttitor a ex vel, malesuada suscipit ex. Duis et lobortis magna, at viverra mi. Nullam gravida iaculis ullamcorper. Praesent feugiat ligula sed nunc dignissim, non facilisis ante luctus. Sed quam erat, porta ut turpis a, faucibus ornare arcu. Vestibulum in bibendum erat. Praesent tincidunt eleifend interdum. Curabitur condimentum vitae orci vel suscipit. Morbi nulla magna, cursus ut eleifend in, euismod id nulla.', '2024-09-29 05:47:46', '2024-10-04 07:53:05'),
-(4, 'kamis-jumat', 'baju batik', '2024-09-29 06:15:36', '2024-10-13 02:41:42');
+(4, 'kamis', 'P5 senam di lapangan', '2024-09-29 06:15:36', '2024-10-21 17:05:22'),
+(8, 'Jumat', 'Libur tanggal merah', '2024-10-21 17:05:45', '2024-10-21 17:05:45');
 
 -- --------------------------------------------------------
 
@@ -173,8 +174,21 @@ CREATE TABLE `likes` (
 
 INSERT INTO `likes` (`id`, `photo_id`, `user_id`, `created_at`, `updated_at`) VALUES
 (2, 10, 2, '2024-10-18 07:01:13', '2024-10-18 07:01:13'),
-(6, 8, 13, '2024-10-18 07:11:22', '2024-10-18 07:11:22'),
-(7, 8, 2, '2024-10-18 07:21:01', '2024-10-18 07:21:01');
+(10, 8, 20, '2024-10-18 09:03:01', '2024-10-18 09:03:01'),
+(11, 43, 20, '2024-10-18 09:03:05', '2024-10-18 09:03:05'),
+(12, 8, 24, '2024-10-18 09:03:35', '2024-10-18 09:03:35'),
+(13, 43, 24, '2024-10-18 09:03:39', '2024-10-18 09:03:39'),
+(14, 8, 25, '2024-10-18 09:04:07', '2024-10-18 09:04:07'),
+(15, 43, 25, '2024-10-18 09:04:11', '2024-10-18 09:04:11'),
+(16, 8, 26, '2024-10-18 09:04:59', '2024-10-18 09:04:59'),
+(17, 43, 26, '2024-10-18 09:05:04', '2024-10-18 09:05:04'),
+(19, 43, 13, '2024-10-18 10:37:29', '2024-10-18 10:37:29'),
+(20, 33, 13, '2024-10-18 10:37:36', '2024-10-18 10:37:36'),
+(28, 10, 13, '2024-10-19 00:24:52', '2024-10-19 00:24:52'),
+(30, 8, 13, '2024-10-19 00:27:57', '2024-10-19 00:27:57'),
+(31, 33, 24, '2024-10-19 02:20:15', '2024-10-19 02:20:15'),
+(32, 32, 2, '2024-10-29 19:53:34', '2024-10-29 19:53:34'),
+(33, 8, 2, '2024-10-29 21:04:22', '2024-10-29 21:04:22');
 
 -- --------------------------------------------------------
 
@@ -455,8 +469,22 @@ INSERT INTO `personal_access_tokens` (`id`, `tokenable_type`, `tokenable_id`, `n
 (207, 'App\\Models\\User', 2, 'auth_token', '2d36291a42f2e2441d7ade4a0dff810a3fe2433a2c596820d674154dfca9e5c0', '2024-10-18 07:01:27', '[\"*\"]', NULL, '2024-10-18 06:30:07', '2024-10-18 07:01:27'),
 (208, 'App\\Models\\User', 13, 'auth_token', 'b428ed469b473573a451bad3ec751fdf3379a0ebe4b3154250d6226e95c8281c', '2024-10-18 07:11:22', '[\"*\"]', NULL, '2024-10-18 07:10:57', '2024-10-18 07:11:22'),
 (209, 'App\\Models\\User', 23, 'auth_token', 'e9146c754cb7bd13a158044db45272afc7a7700ab73cc617c9c44905e99c9b70', NULL, '[\"*\"]', NULL, '2024-10-18 07:12:37', '2024-10-18 07:12:37'),
-(210, 'App\\Models\\User', 2, 'auth_token', 'ab43a0159e8522662fab8dcf62d72b443e7c087caa635c5ce07ce365f34da079', NULL, '[\"*\"]', NULL, '2024-10-18 07:14:46', '2024-10-18 07:14:46'),
-(211, 'App\\Models\\User', 2, 'auth_token', '60db4b7a75b2382f5169718a9073954382ed95aba97ce944e98dcc1c8c44634e', '2024-10-18 07:21:01', '[\"*\"]', NULL, '2024-10-18 07:19:42', '2024-10-18 07:21:01');
+(210, 'App\\Models\\User', 2, 'auth_token', 'ab43a0159e8522662fab8dcf62d72b443e7c087caa635c5ce07ce365f34da079', '2024-10-18 08:42:54', '[\"*\"]', NULL, '2024-10-18 07:14:46', '2024-10-18 08:42:54'),
+(211, 'App\\Models\\User', 2, 'auth_token', '60db4b7a75b2382f5169718a9073954382ed95aba97ce944e98dcc1c8c44634e', '2024-10-18 07:21:01', '[\"*\"]', NULL, '2024-10-18 07:19:42', '2024-10-18 07:21:01'),
+(212, 'App\\Models\\User', 2, 'auth_token', 'b83d1a5bce087358753df0e3aa5538ce1711cb5bfb6c163e87caeee6496bd6c8', '2024-10-18 08:44:05', '[\"*\"]', NULL, '2024-10-18 08:21:31', '2024-10-18 08:44:05'),
+(213, 'App\\Models\\User', 20, 'auth_token', 'f7a19f43cf5db6e065a115aa647a5e1ab993fd49bab8357376c02d44676fab73', '2024-10-18 09:03:05', '[\"*\"]', NULL, '2024-10-18 09:02:53', '2024-10-18 09:03:05'),
+(214, 'App\\Models\\User', 24, 'auth_token', '5c30af79ea1d5c4d2f66b2e0541cc84718d41fb01047a1e66b118c52da37f1a5', '2024-10-18 09:03:39', '[\"*\"]', NULL, '2024-10-18 09:03:28', '2024-10-18 09:03:39'),
+(215, 'App\\Models\\User', 25, 'auth_token', '581640a01316682a1e889d15ce2ca9260f07123c295a34292b0e82a326d28731', '2024-10-18 09:04:11', '[\"*\"]', NULL, '2024-10-18 09:03:58', '2024-10-18 09:04:11'),
+(216, 'App\\Models\\User', 26, 'auth_token', '28c17aea53b993896c455521a0458381ca451d9d63e6ca8f58be7afad2004096', '2024-10-18 09:05:04', '[\"*\"]', NULL, '2024-10-18 09:04:49', '2024-10-18 09:05:04'),
+(217, 'App\\Models\\User', 13, 'auth_token', 'c196b20844d8c39f0a6558d796ee87320eed45d645cf9a2fda890941025c3f2f', '2024-10-18 10:37:36', '[\"*\"]', NULL, '2024-10-18 10:36:36', '2024-10-18 10:37:36'),
+(218, 'App\\Models\\User', 2, 'auth_token', '6c71e3b796f0185fb415c2063d6853b8c575ae8c85f3a32fb2ae3f91676c62df', '2024-10-18 23:50:50', '[\"*\"]', NULL, '2024-10-18 10:39:11', '2024-10-18 23:50:50'),
+(219, 'App\\Models\\User', 13, 'auth_token', 'b0db36dcc3611565f1c8dda6424f17ea37a5b89f50f129300567066a759e469f', '2024-10-19 00:27:57', '[\"*\"]', NULL, '2024-10-19 00:03:40', '2024-10-19 00:27:57'),
+(220, 'App\\Models\\User', 2, 'auth_token', '90d6d63be6d04173ca40bbd9a5586027ae417404bf20d052051687fb1ba600ee', NULL, '[\"*\"]', NULL, '2024-10-19 01:56:15', '2024-10-19 01:56:15'),
+(221, 'App\\Models\\User', 24, 'auth_token', '942074ab2d91344d3d3069595ef925379700bfbfc3c06c7f08406617761aedac', '2024-10-19 02:20:15', '[\"*\"]', NULL, '2024-10-19 02:18:43', '2024-10-19 02:20:15'),
+(222, 'App\\Models\\User', 2, 'auth_token', '3a4a614f4029d1bf26feb7cac12dd6c3cfd36a9f0a776882a95ee4ee99bbb0cb', NULL, '[\"*\"]', NULL, '2024-10-19 02:22:16', '2024-10-19 02:22:16'),
+(223, 'App\\Models\\User', 13, 'auth_token', 'd654e37c6177689b55cabbcb83495fb9643d155c529ff0a6fc4be898f2dd4875', NULL, '[\"*\"]', NULL, '2024-10-27 18:41:56', '2024-10-27 18:41:56'),
+(224, 'App\\Models\\User', 2, 'auth_token', '1554d6da0e68acbac2367f773baefc64b6c68daf7059fe9cd716f3cb6965584f', NULL, '[\"*\"]', NULL, '2024-10-27 18:43:12', '2024-10-27 18:43:12'),
+(225, 'App\\Models\\User', 2, 'auth_token', '0fd1a9770a93fd911b467b78bd80b1dbb51d0aaea1570c78da2630a5fe559931', '2024-10-29 21:04:22', '[\"*\"]', NULL, '2024-10-29 19:53:18', '2024-10-29 21:04:22');
 
 -- --------------------------------------------------------
 
@@ -479,13 +507,23 @@ CREATE TABLE `photos` (
 --
 
 INSERT INTO `photos` (`id`, `title`, `description`, `image_url`, `gallery_id`, `created_at`, `updated_at`) VALUES
-(5, 'Foto kedua', 'lab samsung', 'https://tse3.mm.bing.net/th?id=OIP.24vDnvx48fRM4IXJGMMsJgHaEK&pid=Api&P=0&h=180', 2, '2024-09-28 14:31:00', '2024-10-03 20:48:39'),
-(8, 'Ruang Praktek PPLG-lab Samsung', 'ruang praktek yang bekerja sama dengan samsung', 'https://static.republika.co.id/uploads/images/inpicture_slide/sukses-menerapkan-pendidikan-vokasi-melalui-empat-program-kelas-industri_221112194712-854.jpg', 1, '2024-09-28 02:09:00', '2024-10-01 09:04:07'),
-(9, 'foto', 'deskripsi foto', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzMQ6EGkOHmizXbXKr3rvzH-gEFZ-tesRhRQ&s', 7, '2024-09-29 05:22:10', '2024-10-18 07:16:34'),
-(10, 'foto', 'deskripsi', 'https://static.republika.co.id/uploads/images/inpicture_slide/sukses-menerapkan-pendidikan-vokasi-melalui-empat-program-kelas-industri_221112194712-854.jpg', 1, '2024-09-29 05:22:32', '2024-10-03 20:46:47'),
-(20, 'tes', 'desss', 'https://smkn4bogor.sch.id/assets/images/background/smkn4bogor_2.jpg', 1, '2024-10-18 02:01:23', '2024-10-18 06:53:32'),
-(23, '12', '12', 'https://i.ytimg.com/vi/33lLn44_AfM/maxresdefault_live.jpg', 2, '2024-10-18 02:20:49', '2024-10-18 02:20:49'),
-(30, 'q', 'q', 'http://hayoo.id/wp-content/uploads/2022/11/Sukses-Terapkan-Pendidikan-Vokasi-SMKN-4-Bogor-Dilirik-Banyak-Perusahaan-Industri-Ternama-IST-3.jpg', 1, '2024-10-18 06:55:00', '2024-10-18 06:55:00');
+(8, 'Halaman Sekolah', 'Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.', 'https://smkn4bogor.sch.id/assets/images/background/smkn4bogor_2.jpg', 1, '2024-09-28 02:09:00', '2024-10-18 08:26:37'),
+(10, 'Title', 'Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.', 'https://smkn4bogor.sch.id/assets/images/background/smkn4bogor_3.jpg', 1, '2024-09-29 05:22:32', '2024-10-18 08:32:55'),
+(23, 'Title', 'des', 'https://i.ytimg.com/vi/33lLn44_AfM/maxresdefault_live.jpg', 2, '2024-10-18 02:20:49', '2024-10-18 08:34:09'),
+(32, 'Foto', 'Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.', 'https://i.ytimg.com/vi/N6cmqCbQllo/maxresdefault.jpg', 1, '2024-10-18 08:30:55', '2024-10-18 08:30:55'),
+(33, 'Judul', 'Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.', 'https://i.ytimg.com/vi/PUkodmusvC8/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLBd6ZUWbvRPJKM-2UlIPY9B1LT6kQ', 1, '2024-10-18 08:32:37', '2024-10-18 08:33:07'),
+(34, 'Title', 'des', 'http://cdn-2.tstatic.net/bogor/foto/bank/images/smkn-4-kota-bogor-mobil-listrik_20160426_180755.jpg', 2, '2024-10-18 08:35:15', '2024-10-18 08:35:15'),
+(35, 'Title', 'des', 'https://cdn-2.tstatic.net/bogor/foto/bank/images/smkn-4-kota-bogor-mobil-listrik_20160426_180728.jpg', 2, '2024-10-18 08:35:52', '2024-10-18 08:35:52'),
+(36, 'Title', 'des', 'https://www.kobrapostonline.com/wp-content/uploads/2022/08/smkn-4.jpg', 2, '2024-10-18 08:36:56', '2024-10-18 08:36:56'),
+(37, 'Title', '1', 'https://static.republika.co.id/uploads/images/inpicture_slide/sukses-menerapkan-pendidikan-vokasi-melalui-empat-program-kelas-industri_221112194712-854.jpg', 7, '2024-10-18 08:38:48', '2024-10-18 08:38:48'),
+(38, 'Title', '2', 'https://asset-2.tstatic.net/jabar/foto/bank/images/1-Sukses-menerapkan-pendidikan-vokasi-pada-siswa-siswanya-melalui-empat-program-Kelas-Industri.jpg', 7, '2024-10-18 08:39:16', '2024-10-18 08:39:16'),
+(39, 'Title', 'des', 'https://www.harapanrakyat.com/wp-content/uploads/2022/11/SMKN-4-Bogor.jpg', 7, '2024-10-18 08:40:19', '2024-10-18 08:40:19'),
+(40, 'Title', '1', 'http://hayoo.id/wp-content/uploads/2022/11/Sukses-Terapkan-Pendidikan-Vokasi-SMKN-4-Bogor-Dilirik-Banyak-Perusahaan-Industri-Ternama-IST-2.jpg', 7, '2024-10-18 08:41:13', '2024-10-18 08:41:13'),
+(41, 'Title', '1', 'https://smkn4bogor.sch.id/assets/images/background/tkr.jpeg', 7, '2024-10-18 08:41:41', '2024-10-18 08:41:41'),
+(43, 'Kepala Sekolah', 'Tentang Kami', 'https://smkn4bogor.sch.id/assets/images/avatar/kepala_sekolah.jpg', 1, '2024-10-18 08:47:10', '2024-10-18 08:47:10'),
+(44, 'Title', 'w', 'https://smkn4bogor.sch.id/assets/images/background/pplg_2.jpg', 7, '2024-10-18 08:54:32', '2024-10-18 08:54:32'),
+(45, 'Title', 'w', 'https://smkn4bogor.sch.id/assets/images/background/tjkt_2.jpg', 7, '2024-10-18 08:55:12', '2024-10-18 08:55:12'),
+(46, 'Title', 'des', 'https://smkn4bogor.sch.id/assets/images/background/tjkt_3.jpg', 7, '2024-10-18 08:55:29', '2024-10-18 08:55:29');
 
 -- --------------------------------------------------------
 
@@ -506,10 +544,15 @@ CREATE TABLE `pictures` (
 --
 
 INSERT INTO `pictures` (`id`, `album_id`, `image_url`, `created_at`, `updated_at`) VALUES
-(2, 3, 'https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/07/how-to-make-a-url-for-a-picture-on-your-computer-4.jpg', '2024-09-30 21:04:59', '2024-09-30 21:04:59'),
-(4, 3, 'https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/07/how-to-make-a-url-for-a-picture-on-your-computer-4.jpg', '2024-10-01 06:40:19', '2024-10-01 06:40:19'),
-(7, 3, 'https://i.ytimg.com/vi/33lLn44_AfM/maxresdefault_live.jpg', '2024-10-18 02:29:32', '2024-10-18 02:29:32'),
-(9, 3, 'https://i.ytimg.com/vi/a9Mbh1jObI0/maxresdefault.jpg', '2024-10-18 03:27:13', '2024-10-18 03:27:52');
+(10, 3, 'https://smkn4bogor.sch.id/assets/images/background/taman_1.jpg', '2024-10-18 08:51:06', '2024-10-18 08:51:06'),
+(11, 3, 'https://smkn4bogor.sch.id/assets/images/background/tpfl_1.jpg', '2024-10-18 08:52:05', '2024-10-18 08:52:05'),
+(12, 3, 'https://smkn4bogor.sch.id/assets/images/background/pplg_1.jpg', '2024-10-18 08:55:57', '2024-10-18 08:55:57'),
+(13, 3, 'https://i.ytimg.com/vi/p_FIRHblPg0/maxresdefault.jpg', '2024-10-18 08:56:36', '2024-10-18 08:56:36'),
+(14, 3, 'https://tse2.mm.bing.net/th?id=OIP.7rEJeNkA9iesexDBLAeFFwHaE8&pid=Api&P=0&h=180', '2024-10-18 08:58:04', '2024-10-18 08:58:04'),
+(15, 3, 'https://tse3.mm.bing.net/th?id=OIP.8aDULJfgroKbPNewzBnYoQHaE8&pid=Api&P=0&h=180', '2024-10-18 08:58:19', '2024-10-18 08:58:19'),
+(16, 3, 'https://www.kobrapostonline.com/wp-content/uploads/2022/08/smkn-4.jpg', '2024-10-18 08:58:36', '2024-10-18 08:58:36'),
+(17, 3, 'https://www.ikons.id/wp-content/uploads/2017/09/21371370_1742489572430843_2443425467616778128_n-640x438.jpg', '2024-10-18 08:58:52', '2024-10-18 08:58:52'),
+(18, 3, 'https://tse4.mm.bing.net/th?id=OIP.PGeHl0xp1I7qp7MrOwHj6QHaEx&pid=Api&P=0&h=180', '2024-10-18 08:59:36', '2024-10-18 08:59:36');
 
 -- --------------------------------------------------------
 
@@ -551,8 +594,11 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `role`, `remember_token`, `created_at`, `updated_at`) VALUES
 (2, 'admin1', 'admin1@gmail.com', NULL, 'admin1', 'admin', NULL, NULL, '2024-09-29 00:51:08'),
-(13, 'zankikarin', 'zan@gmail.com', NULL, '123456', 'user', NULL, '2024-09-27 23:04:15', '2024-10-05 00:45:31'),
-(20, 'tesuser', 'tesuser@gmail.com', NULL, '123456', 'user', NULL, '2024-10-13 02:39:57', '2024-10-13 02:39:57');
+(13, 'zan kikarin', 'zan@gmail.com', NULL, '123456', 'user', NULL, '2024-09-27 23:04:15', '2024-10-19 01:51:51'),
+(20, 'tesuser', 'tesuser@gmail.com', NULL, '123456', 'user', NULL, '2024-10-13 02:39:57', '2024-10-13 02:39:57'),
+(24, 'Ilham Pauzan', 'user1@gmail.com', NULL, '123456', 'user', NULL, '2024-10-18 09:01:03', '2024-10-19 02:19:37'),
+(25, 'user2', 'user2@gmail.com', NULL, '123456', 'user', NULL, '2024-10-18 09:01:17', '2024-10-18 09:01:17'),
+(26, 'user3', 'user3@gmail.com', NULL, '123456', 'user', NULL, '2024-10-18 09:01:48', '2024-10-18 09:01:48');
 
 --
 -- Indexes for dumped tables
@@ -663,19 +709,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `agendas`
 --
 ALTER TABLE `agendas`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `albums`
 --
 ALTER TABLE `albums`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -693,13 +739,13 @@ ALTER TABLE `galleries`
 -- AUTO_INCREMENT for table `infos`
 --
 ALTER TABLE `infos`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `likes`
 --
 ALTER TABLE `likes`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -711,19 +757,19 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `personal_access_tokens`
 --
 ALTER TABLE `personal_access_tokens`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=212;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=226;
 
 --
 -- AUTO_INCREMENT for table `photos`
 --
 ALTER TABLE `photos`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- AUTO_INCREMENT for table `pictures`
 --
 ALTER TABLE `pictures`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `profiles`
@@ -735,7 +781,7 @@ ALTER TABLE `profiles`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- Constraints for dumped tables
