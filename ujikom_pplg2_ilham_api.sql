@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 04, 2024 at 05:49 PM
+-- Generation Time: Nov 07, 2024 at 08:53 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -188,7 +188,8 @@ INSERT INTO `likes` (`id`, `photo_id`, `user_id`, `created_at`, `updated_at`) VA
 (30, 8, 13, '2024-10-19 00:27:57', '2024-10-19 00:27:57'),
 (31, 33, 24, '2024-10-19 02:20:15', '2024-10-19 02:20:15'),
 (32, 32, 2, '2024-10-29 19:53:34', '2024-10-29 19:53:34'),
-(33, 8, 2, '2024-10-29 21:04:22', '2024-10-29 21:04:22');
+(35, 8, 2, '2024-11-06 22:17:41', '2024-11-06 22:17:41'),
+(38, 43, 2, '2024-11-06 22:21:44', '2024-11-06 22:21:44');
 
 -- --------------------------------------------------------
 
@@ -484,7 +485,22 @@ INSERT INTO `personal_access_tokens` (`id`, `tokenable_type`, `tokenable_id`, `n
 (222, 'App\\Models\\User', 2, 'auth_token', '3a4a614f4029d1bf26feb7cac12dd6c3cfd36a9f0a776882a95ee4ee99bbb0cb', NULL, '[\"*\"]', NULL, '2024-10-19 02:22:16', '2024-10-19 02:22:16'),
 (223, 'App\\Models\\User', 13, 'auth_token', 'd654e37c6177689b55cabbcb83495fb9643d155c529ff0a6fc4be898f2dd4875', NULL, '[\"*\"]', NULL, '2024-10-27 18:41:56', '2024-10-27 18:41:56'),
 (224, 'App\\Models\\User', 2, 'auth_token', '1554d6da0e68acbac2367f773baefc64b6c68daf7059fe9cd716f3cb6965584f', NULL, '[\"*\"]', NULL, '2024-10-27 18:43:12', '2024-10-27 18:43:12'),
-(225, 'App\\Models\\User', 2, 'auth_token', '0fd1a9770a93fd911b467b78bd80b1dbb51d0aaea1570c78da2630a5fe559931', '2024-10-29 21:04:22', '[\"*\"]', NULL, '2024-10-29 19:53:18', '2024-10-29 21:04:22');
+(225, 'App\\Models\\User', 2, 'auth_token', '0fd1a9770a93fd911b467b78bd80b1dbb51d0aaea1570c78da2630a5fe559931', '2024-11-06 22:21:43', '[\"*\"]', NULL, '2024-10-29 19:53:18', '2024-11-06 22:21:43'),
+(226, 'App\\Models\\User', 2, 'auth_token', '4aaed588ff49f459065c76e5ba0facdd61483b4dd815ee0a9fc113678efef669', NULL, '[\"*\"]', NULL, '2024-11-06 23:44:12', '2024-11-06 23:44:12'),
+(227, 'App\\Models\\User', 29, 'auth_token', '30005f9f590bf4853dade722e6e7db4eab04166ec0c3823d5fc133f99765bf1a', NULL, '[\"*\"]', NULL, '2024-11-06 23:45:45', '2024-11-06 23:45:45'),
+(228, 'App\\Models\\User', 13, 'auth_token', '58d30bf5c03320333386869a3f8ce1aaf44537293e7fcf2279d21c6b6343b002', NULL, '[\"*\"]', NULL, '2024-11-07 00:00:23', '2024-11-07 00:00:23'),
+(229, 'App\\Models\\User', 2, 'auth_token', 'cb3ccc01b26152c540a5fa4bdd1395ac1b8e864c046f4c2a50c94cd4f8ccc0ed', NULL, '[\"*\"]', NULL, '2024-11-07 00:00:51', '2024-11-07 00:00:51'),
+(230, 'App\\Models\\User', 13, 'auth_token', '2420faa9727280a77af434fff999e7dcb0158e9e92f710e11c0afd23c72c3126', NULL, '[\"*\"]', NULL, '2024-11-07 00:06:20', '2024-11-07 00:06:20'),
+(231, 'App\\Models\\User', 13, 'auth_token', 'b1a17f721626b6dbf1689a683442d27907945d85fa88439726445067fc81709b', NULL, '[\"*\"]', NULL, '2024-11-07 00:06:25', '2024-11-07 00:06:25'),
+(232, 'App\\Models\\User', 13, 'auth_token', '245d0b2d3c55463e5d425f41e3a51437883e437a86c99e9314a83789ce8a1e47', NULL, '[\"*\"]', NULL, '2024-11-07 00:06:29', '2024-11-07 00:06:29'),
+(233, 'App\\Models\\User', 2, 'auth_token', '0180c73aa49f66526562164b3580ecee8cf39f115ce015641e55cd382a3cebdc', NULL, '[\"*\"]', NULL, '2024-11-07 00:06:50', '2024-11-07 00:06:50'),
+(234, 'App\\Models\\User', 2, 'auth_token', '751c8e29bb2c5ce285077f6755d6685849a8583772eb2b51685d2ea0454507d3', NULL, '[\"*\"]', NULL, '2024-11-07 00:06:57', '2024-11-07 00:06:57'),
+(235, 'App\\Models\\User', 2, 'auth_token', '935507654ad7feff662d915b3351694c5e2bafbc5c55e4a87e5a03cb59d2940c', NULL, '[\"*\"]', NULL, '2024-11-07 00:07:31', '2024-11-07 00:07:31'),
+(236, 'App\\Models\\User', 13, 'auth_token', '907e74fb7c4e2dc69f32982d13d90919566405aac27c9990955bd984781c1cb2', NULL, '[\"*\"]', NULL, '2024-11-07 00:10:28', '2024-11-07 00:10:28'),
+(237, 'App\\Models\\User', 13, 'auth_token', 'cdfd52f89747a023188eb3573fa4ec4bcd0b0a8482ba9a2743109da667c75178', NULL, '[\"*\"]', NULL, '2024-11-07 00:10:30', '2024-11-07 00:10:30'),
+(238, 'App\\Models\\User', 13, 'auth_token', '9182cba4696401c828137ccd889c2e2bbbd575e781c0589c344ddd9916da0d29', NULL, '[\"*\"]', NULL, '2024-11-07 00:10:34', '2024-11-07 00:10:34'),
+(239, 'App\\Models\\User', 13, 'auth_token', '6cc0a13bba90ed677bbade040d05df7ec7b3209795c1fb681d885e4db1235cf7', NULL, '[\"*\"]', NULL, '2024-11-07 00:10:57', '2024-11-07 00:10:57'),
+(240, 'App\\Models\\User', 2, 'auth_token', 'fbc6d081a4fd8c8ef32bdcae9320b6e77bff7e6951870568f87a0a1d432bcb03', NULL, '[\"*\"]', NULL, '2024-11-07 00:11:15', '2024-11-07 00:11:15');
 
 -- --------------------------------------------------------
 
@@ -598,7 +614,8 @@ INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `ro
 (20, 'tesuser', 'tesuser@gmail.com', NULL, '123456', 'user', NULL, '2024-10-13 02:39:57', '2024-10-13 02:39:57'),
 (24, 'Ilham Pauzan', 'user1@gmail.com', NULL, '123456', 'user', NULL, '2024-10-18 09:01:03', '2024-10-19 02:19:37'),
 (25, 'user2', 'user2@gmail.com', NULL, '123456', 'user', NULL, '2024-10-18 09:01:17', '2024-10-18 09:01:17'),
-(26, 'user3', 'user3@gmail.com', NULL, '123456', 'user', NULL, '2024-10-18 09:01:48', '2024-10-18 09:01:48');
+(26, 'user3', 'user3@gmail.com', NULL, '123456', 'user', NULL, '2024-10-18 09:01:48', '2024-10-18 09:01:48'),
+(29, 'admin2', 'admin2@gmail.com', NULL, 'admin2', 'admin', NULL, '2024-11-06 23:43:52', '2024-11-06 23:45:03');
 
 --
 -- Indexes for dumped tables
@@ -721,7 +738,7 @@ ALTER TABLE `albums`
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -733,7 +750,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `galleries`
 --
 ALTER TABLE `galleries`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `infos`
@@ -745,31 +762,31 @@ ALTER TABLE `infos`
 -- AUTO_INCREMENT for table `likes`
 --
 ALTER TABLE `likes`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
 --
 ALTER TABLE `personal_access_tokens`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=226;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=241;
 
 --
 -- AUTO_INCREMENT for table `photos`
 --
 ALTER TABLE `photos`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 
 --
 -- AUTO_INCREMENT for table `pictures`
 --
 ALTER TABLE `pictures`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `profiles`
@@ -781,7 +798,7 @@ ALTER TABLE `profiles`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- Constraints for dumped tables
